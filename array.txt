@@ -1,0 +1,64 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+/**
+ *
+ * @author HACKER
+ */
+
+class Student {
+
+    int age;
+    String mobile, name;
+
+    public Student(int age, String mobile, String name) {
+        this.age = age;
+        this.mobile = mobile;
+        this.name = name;
+    }
+
+    int getAge() {
+        return this.age;
+    }
+
+    String getMobile() {
+        return this.mobile;
+    }
+
+    String getName() {
+        return this.name;
+    }
+}
+
+public class Array {
+
+    public static void main(String[] args) {
+        ArrayList<Student> s = new ArrayList<Student>();
+        Scanner scanner = new Scanner(System.in);
+     Student stu[] = new Student[10];
+     
+            System.out.println("Enter Your Name");
+            String name = scanner.next();
+            System.out.println("Enter Your Age");
+            int age = scanner.nextInt();
+            System.out.println("Enter Your Mobile");
+            String mobileNum = scanner.next();
+            System.out.println("\n");
+       
+            stu[0]= new Student(age,mobileNum,name);
+           
+        
+
+ System.out.println("Name is : - " + stu[0].getName() + "  " + " Age is : - " + stu[0].getAge() + "  " + "Mobile : - " + stu[0].getMobile());
+
+
+        
+    }
+}
